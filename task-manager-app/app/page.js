@@ -223,7 +223,7 @@ export default function Home() {
   }, [tasks, filters, sortOrder, searchQuery]);
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
+    <div className="min-h-screen text-black p-6">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
           Task Management App
@@ -237,7 +237,7 @@ export default function Home() {
               placeholder="Search tasks..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+              className="w-full text-black p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
             />
             <Filter filters={filters} setFilters={setFilters} />
           </div>
